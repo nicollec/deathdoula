@@ -2,8 +2,8 @@ import type { Metadata } from 'next';
 import './globals.css';
 
 export const metadata: Metadata = {
-  title: 'deathdoula.ro — București',
-  description: 'Însoțire non-medicală, în persoană, pentru conversațiile dificile din apropierea morții.',
+  title: 'Death doula în București | Însoțire la finalul vieții',
+  description: 'Însoțire conversațională non-medicală, în persoană, pentru oameni care se apropie de finalul vieții și pentru conversațiile care contează.',
 };
 
 export default function RootLayout({

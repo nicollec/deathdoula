@@ -11,5 +11,5 @@ export function ContactMail() {
     return <div className="mail-reveal"><p>Îmi poți scrie la</p><a href={`mailto:${address}`}>{address} <span>↗</span></a></div>;
   }
 
-  return <button className="reveal-mail" type="button" onClick={() => setRevealed(true)}>Arată adresa de e-mail <span>↗</span></button>;
+  return <div className="mail-intro"><p>Nu trebuie să formulezi perfect mesajul. Poți scrie doar câteva rânduri.</p><button className="reveal-mail" type="button" onClick={() => setRevealed(true)}>Arată adresa de e-mail <span>↗</span></button></div>;
 }
