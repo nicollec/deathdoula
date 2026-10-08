@@ -22,6 +22,7 @@ export const metadata: Metadata = {
     'conversații despre moarte București',
   ],
   alternates: { canonical: '/' },
+  icons: { icon: '/favicon.svg' },
   robots: {
     index: true,
     follow: true,
@@ -34,7 +35,7 @@ export const metadata: Metadata = {
     siteName,
     title: 'Death doula în București | Însoțire la finalul vieții',
     description,
-    images: [{ url: '/media/tea-hero-poster.png', alt: 'deathdoula.ro — însoțire conversațională non-medicală în București' }],
+    images: [{ url: '/media/tea-hero-poster.png', width: 2688, height: 1520, alt: 'deathdoula.ro — însoțire conversațională non-medicală în București' }],
   },
   twitter: {
     card: 'summary_large_image',
