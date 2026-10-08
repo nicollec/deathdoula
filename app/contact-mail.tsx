@@ -57,6 +57,11 @@ export function ContactMail() {
       <label htmlFor="cf-message">Mesaj</label>
       <textarea id="cf-message" name="message" rows={4} placeholder="Scrie-mi câteva rânduri despre ce se întâmplă" required disabled={status === 'sending'} />
 
+      {/* Spam trap: hidden from real users, filled only by bots. Rejected server-side by the form provider. */}
+      <label className="hp-field" aria-hidden="true">
+        <input type="checkbox" name="botcheck" tabIndex={-1} autoComplete="off" />
+      </label>
+
       {status === 'error' && (
         <p className="form-error">Nu am putut trimite mesajul. Te rog să încerci din nou sau să-mi scrii direct pe e-mail.</p>
       )}
@@ -64,8 +69,6 @@ export function ContactMail() {
       <button type="submit" disabled={status === 'sending'}>
         {status === 'sending' ? 'Se trimite…' : 'Trimite mesajul'} <span>↗</span>
       </button>
-
-      <input type="hidden" name="redirect" value="false" />
     </form>
   );
 }
