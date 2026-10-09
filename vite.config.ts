@@ -46,6 +46,14 @@ export default defineConfig(async () => {
 
   return {
     css: { postcss: { plugins: [tailwindcss()] } },
+    build: {
+      rollupOptions: {
+        output: {
+          chunkFileNames: '_next/static/chunks/[hash].js',
+          entryFileNames: '_next/static/[name]-[hash].js',
+        },
+      },
+    },
     server: {
       host: true,
       ...(isCodexSeatbeltSandbox
