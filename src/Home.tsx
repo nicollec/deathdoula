@@ -1,5 +1,5 @@
-import { ContactMail } from './contact-mail';
-import './still.css';
+import { ContactMail } from '../app/contact-mail';
+import '../app/still.css';
 
 const moments = [
   'Știi că timpul este limitat, dar în jurul tău se vorbește doar despre tratamente și mâncare.',
@@ -8,7 +8,7 @@ const moments = [
   'Te gândești cine ar vrea să fie aproape, ce ai vrea să rămână celor dragi sau cum vor fi îngrijite animalele tale.',
 ];
 const limits = ['nu ofer îngrijire medicală sau recomandări clinice', 'nu înlocuiesc terapia, sprijinul psihiatric sau consilierea juridică', 'nu organizez funeralii și nu ofer servicii religioase', 'nu sunt serviciu de urgență și nu promit disponibilitate 24/7 sau prezență garantată în ultimele ore, dar pot incerca', 'întâlnirile se stabilesc în funcție de disponibilitatea mea, de regulă seara și în weekend. Am un job care necesita timp, iar DeathDoula este proiectul meu de suflet'];
-const stillMatters = ['O persoană pe care vrei să o vezi', 'Un loc sau un lucru mic care ți-ar face bine', 'Ce ai vrea să spui sau să lași în urmă', 'Ce ai vrea să știe familia despre animalele tale'];
+const stillMatters = ['O persoană pe care vrei să o vezi', 'Un loc sau un lucru mic care ți-ar face bine', 'Ce ai vrea să spui sau să lași în urmă', 'Ce ai vrei să știe familia despre animalele tale'];
 
 export default function Home() {
   return <main>
